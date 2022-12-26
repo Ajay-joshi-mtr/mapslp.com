@@ -1,0 +1,41 @@
+.map{
+    height: 80vh;
+}
+
+.about_us{
+    padding: 15px;
+}
+
+.heading-h1{
+    text-align: center;
+    position: relative;
+    padding: 15px;
+}
+
+.heading-h1::after{
+    content: "";
+    height: 6px;
+    width: 45vw;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color_primary_d);
+}
+
+.about_us_main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 728px) {
+    .map{
+        height: 60vh;
+    }
+
+    .heading-h1::after{
+        width: 75vw;
+    }
+}
